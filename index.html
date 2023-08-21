@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== FAVICON ===============-->
+   <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+   <!--=============== REMIXICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="assets/css/styles.css">
+
+   <title>Responsive camping website - Bedimcode</title>
+
+   <!--=======Rating Star-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header " id="header">
+      <nav class="nav container">
+         <a href="/" class="nav__logo">
+            <img src="./assets/img/logo.svg" alt="logo">
+         </a>
+         <!-- menu -->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link" onclick="home()">Home</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__link" onclick="price()">Pricing</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__link" onclick="events()">Events</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#" class="nav__link" onclick="contact()">Contact</a>
+               </li>
+            </ul>
+
+            <div class="nav__buttons">
+               <a href="/" class="nav__button-link">Login</a>
+               <a href="/" class="nav__button-ghost">Get Started</a>
+            </div>
+
+            <!-- close button -->
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+
+         </div>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--========= HOME ========-->
+      <section class="home">
+         <div class="home__container container">
+            <div class="home__content">
+
+               <!--========== home Data ========= -->
+               <div class="home__data" id="home">
+                  <h3 class="home__subtitle">
+                     A LIFETIME EXPERIENCE
+                  </h3>
+
+                  <h1 class="home__title">
+                     Camping Events <br>
+                     To Remember
+                  </h1>
+
+                  <p class="home__discription">
+                     Camp anywhere anytime without hassle and enjoy.
+                  </p>
+
+                  <a href="/" class="home__button">
+                     Explore Locations
+                  </a>
+               </div>
+               <!--========== home Data ========= -->
+
+               <!--======== Contact ==========-->
+               <div class="contact__data" style="display: none;" id="contact">
+                  <div class="contact">
+                     <form action="/" class="contact">
+                        <div class="row">
+                           <input type="text" placeholder="Name">
+                        </div>
+                        <div class="row">
+                           <input type="text" placeholder="Email">
+                        </div>
+                        <div class="row">
+                           <input type="text" placeholder="Address">
+                        </div>
+                        <div class="row">
+                           <input type="text" placeholder="State">
+                        </div>
+                        <div class="row">
+                           <input type="text" placeholder="Number">
+                        </div>
+                        <div class="row">
+                           <button>SUBMIT</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <!--======== Contact ==========-->
+
+               <!--======== Pricing ==========-->
+               <div class="pricing__data" style="display: none;" id="price">
+
+                  <div class="card">
+                     <img
+                        src="https://mub.kfdcecotourism.com/Uploads/StayImages/3/gall04275a6650e-3fd4-44b6-b0b6-83032ba257b8.jpg"
+                        alt="Avatar" style="width:100%">
+                     <div class="container">
+                        <div class="start">
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star"></span>
+                           <span class="fa fa-star"></span>
+                        </div>
+                        <h4><b>KERALA . MANKULAM, MUNNAR</b></h4>
+                        <p>Valley View Camp</p>
+                        <span class="price">Price : ₹1500 - ₹2500</span>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <img
+                        src="https://media.istockphoto.com/id/1213691432/photo/tourists-sitting-near-campfire-under-starry-sky.jpg?s=612x612&w=0&k=20&c=6B2GdQROSabFQKrerTaYHaplaCU2UwiOFokyUW6hEp0="
+                        alt="Avatar" style="width:100%">
+                     <div class="container">
+                        <div class="start">
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star"></span>
+                           <span class="fa fa-star"></span>
+                        </div>
+                        <h4><b>KERALA . VAGAMON</b></h4>
+                        <p>Eagle Point Camp</p>
+                        <span class="price">Price : ₹2500 - ₹3500</span>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <img src="https://www.campper.com/admin/upload/gallery/Gallery_1635433009769.jpg" alt="Avatar"
+                        style="width:100%">
+                     <div class="container">
+                        <div class="start">
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star rating"></span>
+                           <span class="fa fa-star"></span>
+                           <span class="fa fa-star"></span>
+                        </div>
+                        <h4><b>KERALA . WAYANADU</b></h4>
+                        <p>Arrow Hill Camp</p>
+                        <span class="price">Price : ₹3500 - ₹4500</span>
+                     </div>
+                  </div>
+
+               </div>
+               <!--======== Pricing ==========-->
+
+               <!--======== Events =========-->
+               <div class="events__data" id="events" style="display: none;">
+
+                  <div class="card">
+                     <img src="https://backpackersandcityfreaks.com/wp-content/uploads/2021/12/BCF-camping.jpg"
+                        alt="Avatar" style="width:100%">
+                     <div class="container">
+                        <h4><b>BCF : Camping Night Event – Tent stay, Bonfire, BBQ and all the masti at Mothukupally</b>
+                        </h4>
+                        <p>Mothukupally Village</p>
+                        <span class="price">Price :₹1,500.00</span>
+                        <p>TIME : 3:00 PM - 10:00 AM</p>
+                        <p>DATE : 6 - 7 (Sat - Sun), Aug 2023</p>
+                     </div>
+                  </div>
+                  <div class="card">
+                     <img
+                        src="https://backpackersandcityfreaks.com/wp-content/uploads/2022/05/WhatsApp-Image-2022-05-29-at-1.25.32-PM.jpeg"
+                        alt="Avatar" style="width:100%">
+                     <div class="container">
+                        <h4><b>Monsoon Spl: Rajagd to Torna Range Trek & Madheghat waterfall Rappelling</b></h4>
+                        <p>Hyderabad</p>
+                        <span class="price">Price :₹6,200.00</span>
+                        <p>TIME : 3:00 PM - 10:00 AM</p>
+                        <p>DATE : 24 - 28 (Thu - Mon), Aug 2023</p>
+                     </div>
+                  </div>
+
+               </div>
+               <!--======== Events =========-->
+
+
+               <img src="./assets//img/bird-1.svg" alt="image" class="home__bird-1">
+               <img src="./assets//img/bird-2.svg" alt="image" class="home__bird-2">
+            </div>
+
+            <div class="home__images">
+               <img src="./assets/img/img-4.svg" alt="image" class="home__img-4">
+               <img src="./assets/img/img-3.svg" alt="image" class="home__img-3">
+               <img src="./assets/img/img-2.svg" alt="image" class="home__img-2">
+               <img src="./assets/img/img-1.svg" alt="image" class="home__img-1">
+            </div>
+            <div class="moon">
+               <i class="ri-moon-fill"></i>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!------------------------------------- Footer ----------------------------------------->
+   <footer>
+      <div onclick="myInstegram()">
+         &copy; Copyright 2022 by @Rillwan . All Rights Reserved.
+      </div>
+   </footer>
+
+   <!--=============== GSAP ===============-->
+   <script src="./assets/js/gsap.min.js"></script>
+
+   <!--=============== MAIN JS ===============-->
+   <script src="assets/js/main.js"></script>
+</body>
+
+</html>
